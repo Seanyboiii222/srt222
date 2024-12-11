@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Surfing Passion and Statistics">
+    <meta name="author" content="Your Name">
+    <title>My Surfing Page</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Custom background and page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Light blue background */
+            color: #00796b; /* Dark teal text */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header style */
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: #00796b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections for content */
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .content-block {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Styling the unordered and ordered lists */
+        ol, ul {
+            margin-left: 40px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Tableau graph container */
+        .tableau-container {
+            display: flex;
+            justify-content: center; /* Center the embed */
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .tableauPlaceholder {
+            width: 100%;
+            max-width: 100%; /* Prevent it from overflowing */
+            height: 500px;
+            border: none;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .surf-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Thumbnail container and play button styles */
+        .video-container {
+            text-align: center;
+            position: relative;
+            width: 560px;
+            height: 315px;
+            margin: 0 auto;
+        }
+
+        .thumbnail-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: #fff;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            cursor: pointer;
+        }
+
+        .thumbnail-container:hover .play-button {
+            opacity: 1;
+        }
+
+        .thumbnail-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Surfing Passion Page!</h1>
+        <p>Surfing is my favorite hobby, and I want to share my passion with you!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#surfing-basics">Surfing Basics</a>
+        <a href="#surfing-video">Surfing Video</a>
+        <a href="#surf-stats">Surfing Stats</a>
+        <!-- Corrected link to Resume (index.html in Final Project/html) -->
+        <a href="html/index.html" target="_blank">My Resume</a>
+        <!-- Corrected link to AI Webapp (AI Webapp.html in Final Project/html) -->
+        <a href="html/AI%20Webapp.html" target="_blank">Play My AI Game</a>
+    </nav>
+
+    <!-- Surfing Basics Section -->
+    <section id="surfing-basics">
+        <h2>Surfing Basics</h2>
+        <div class="content-block">
+            <p>Surfing is a water sport where the surfer rides waves on a surfboard. Here are some basic things you need to know:</p>
+            <ol>
+                <li>Choosing the right board</li>
+                <ul>
+                    <li>Longboards are good for beginners.</li>
+                    <li>Shortboards are great for more experienced surfers.</li>
+                </ul>
+                <li>Understanding waves</li>
+                <ul>
+                    <li>Waves are formed by wind and tides.</li>
+                    <li>Different types of waves include point breaks, reef breaks, and beach breaks.</li>
+                </ul>
+                <li>Surfing Etiquette</li>
+                <ul>
+                    <li>Don't drop in on someone's wave.</li>
+                    <li>Respect the local surfing community.</li>
+                </ul>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Surfing Video Section -->
+    <section id="surfing-video">
+        <h2>Watch a Surfing Video</h2>
+        <div class="video-container">
+            <!-- Custom thumbnail image linked to YouTube video -->
+            <a href="https://www.youtube.com/watch?v=gnU0RV4qbBQ" target="_blank" class="video-link">
+                <div class="thumbnail-container">
+                    <!-- The image that acts as the thumbnail -->
+                    <img src="Images/Surf.png" alt="Surfing Video" class="thumbnail-img" width="560" height="315">
+                    <!-- Play button overlay -->
+                    <div class="play-button">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Surfing Stats Section (with Tableau Embed) -->
+    <section id="surf-stats">
+        <h2>Surfing Statistics</h2>
+        <div class="tableau-container">
+            <!-- Embed Tableau Visualization -->
+            <div class="tableauPlaceholder" id="viz1733909297911" style="position: relative;">
+                <noscript>
+                    <a href="#">
+                        <img alt="Population and Birth Rate (2012)" src="https://public.tableau.com/static/images/Wo/WorldIndicators222/Population/1_rss.png" style="border: none" />
+                    </a>
+                </noscript>
+                <object class="tableauViz" style="display:none;">
+                    <param name="host_url" value="https://public.tableau.com/" />
+                    <param name="embed_code_version" value="3" />
+                    <param name="site_root" value="" />
+                    <param name="name" value="WorldIndicators222/Population" />
+                    <param name="tabs" value="no" />
+                    <param name="toolbar" value="yes" />
+                    <param name="static_image" value="https://public.tableau.com/static/images/Wo/WorldIndicators222/Population/1.png" />
+                    <param name="animate_transition" value="yes" />
+                    <param name="display_static_image" value="yes" />
+                    <param name="display_spinner" value="yes" />
+                    <param name="display_overlay" value="yes" />
+                    <param name="display_count" value="yes" />
+                    <param name="language" value="en-US" />
+                    <param name="filter" value="publish=yes" />
+                </object>
+            </div>
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        var divElement = document.getElementById('viz1733909297911');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Surfing Passion</p>
+    </footer>
+
+</body>
+</html>

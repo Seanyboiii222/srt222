@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #005f73; /* A deep teal for headings */
+    text-align: center;
+}
+
+/* Surfing Video Section */
+#surfing-video {
+    padding: 20px;
+    text-align: center;
+    background-color: #e9d8a6; /* Light background color */
+    margin-bottom: 30px;
+}
+
+#surfing-video a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#surfing-video img {
+    border: 5px solid #333; /* Add a border to the thumbnail */
+    transition: transform 0.3s ease; /* Add smooth transition on hover */
+}
+
+#surfing-video img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Surfing Statistics Section */
+#surfing-stats {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1faee; /* Light background color for the statistics section */
+}
+
+.tableau-container iframe {
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #005f73;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .video-container img {
+        width: 100%; /* Make the video thumbnail responsive */
+        height: auto;
+    }
+
+    .tableau-container iframe {
+        width: 100%; /* Make Tableau iframe responsive */
+        height: 400px; /* Adjust height for smaller screens */
+    }
+}
